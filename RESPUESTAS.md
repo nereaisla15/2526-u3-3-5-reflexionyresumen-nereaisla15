@@ -62,30 +62,30 @@ La cadena de custodia me parece una forma fácil de invalidar una prueba de mane
 # Gestión de Incidentes
 Recopilar → Investigar → Contener → Erradicar → Recuperar
 
-## 3.1 Recopilación
-### 3.1.1 Recopilación de evidencias
+## Recopilación
+### Recopilación de evidencias
 - Evidencias digitales  
 - RFC 3227  
 - Orden de volatilidad  
 - Cadena de custodia  
 
-### 3.1.2 Procedimiento
+### Procedimiento
 - 4 fases  
 - Uso de herramientas (kits, write-blockers)  
 - Cadena de custodia  
 
-## 3.3 Investigación
-### 3.3.1 MITRE
+## Investigación
+### MITRE
 - MITRE ATT&CK  
 - RE&CT  
 
-### 3.3.2 Investigación avanzada
+### Investigación avanzada
 - 10 fases  
 - Cyber Kill Chain  
 - Modelo Diamante  
 
-## 3.5 Contención
-### 3.5.1 Contención del incidente
+## Contención
+### Contención del incidente
 - Táctica vs estratégica  
 - Capas:
   - Identidad  
