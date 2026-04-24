@@ -10,29 +10,47 @@
 ## 1) Reflexión crítica (preguntas)
 Responde con **lenguaje técnico** y **argumentos** (no solo opiniones). Si procede, usa ejemplos, riesgos y decisiones justificadas.
 
+
 ### 1.1) ¿Qué te han parecido los temas tratados en la unidad?
-En esta práctica me pareció muy interesante ya que esta unidad se centro en como recopilamos las evidencias e investigar un incidente, hemos utilizado la tabla MITRE para poder entender los pasos que hace un atacante y recopilar toda la información posible y poder contener el incidente. He aprendido hacer una línea temporal de todo un incidente y seguir el ritmo de un ataque
+La verdad es que esta unidad me ha parecido bastante interesante porque no se centra solo en detectar un ataque, sino en todo el proceso completo: cómo recoger evidencias, analizarlas y actuar sin cometer errores.
+
+Me ha gustado porque te hace darte cuenta de que no vale con reaccionar rápido, sino que hay que hacerlo bien y con orden, ya que una mala decisión puede hacer que pierdas información importante.
+
 
 ### 1.2) ¿Qué ha sido más útil para tu futuro puesto de trabajo? ¿Por qué?
-Pienso que lo más útil para mi futuro puesto es saber analizar bien un incidente y realizar un infome que explique de manera clara todo lo que está pasando en el incidente y el proceso. También el indentificar cada fase y las alertas para poder detectar el mínimo cambio.
+Lo más útil para mí ha sido aprender a analizar un incidente y saber explicarlo bien en un informe. Al final, en un trabajo real no solo tienes que entender lo que ha pasado, sino saber comunicarlo de forma clara.
+
+También me parece importante saber detectar las fases de un ataque, porque eso ayuda a reaccionar antes y a evitar que el problema vaya a más.
+
 
 ### 1.3) ¿Qué partes ya conocías y cuáles han sido nuevas para ti?
-En las anteriores unidades ya vimos el proceso de como crear un informe, recopilar las evidencias y preservarlas de manera adecuada para no perder la información y lo que es nuevo para mi es el uso de la tabla MITRE para organizar los tipos de ataques que hay y poder tener un control del incidente. También la forma de contener el incidente.
+Ya había visto cosas como la recopilación de evidencias y la importancia de no modificarlas, pero en esta unidad lo he entendido mejor y más aplicado.
+
+Lo nuevo para mí ha sido usar herramientas y métodos como la matriz de MITRE ATT&CK, que ayuda a organizar mejor los ataques y entenderlos paso a paso. También la parte de cómo contener un incidente de forma más estratégica.
+
 
 ### 1.4) ¿Qué concepto/idea te ha llamado más la atención y por qué?
-Lo que me ha parecido más interesante es conocer la matriz MITRE ATT&CK, me parece interesante la manera que se creó la tabla y como organizaron todo de manera que se pueda seguir un incidente de manera clara.
+Lo que más me ha llamado la atención ha sido la matriz de MITRE ATT&CK, porque me parece una forma muy clara de entender cómo actúa un atacante.
+
+Antes veía los ataques como algo más desordenado, pero esto te ayuda a seguir un patrón y entender mejor todo lo que está pasando.
+
 
 ### 1.5) ¿Qué parte recortarías o simplificarías si hubiera menos tiempo? Justifica.
 No recortaría ninguna parte, ya que todos los conceptos están conectados entre sí y forman parte del proceso completo de gestión de incidentes. Reducir contenido dificultaría la comprensión global.
 
+
 ### 1.6) ¿Qué tema has echado en falta o ampliarías? Justifica.
 Me hubiera gustado hacer algun taller o alguna actividad en clase que todos hubieramos participado para hacer un caso real e intentar resolverlo, recrear como sería y analizarlo.
 
+
 ### 1.7) ¿Qué aplicarías “mañana” en un entorno real con recursos limitados?
-Aplicaría un procedimiento ordenado de aislamiento del sistema afectado y recogida de evidencias, priorizando la preservación de la información antes de cualquier acción que pueda modificar el estado del sistema.
+Aplicaría sobre todo el orden: primero aislar el sistema afectado, luego recoger evidencias sin tocarlas demasiado y documentar todo lo que haga.
+
+Aunque no tengas muchas herramientas, seguir un proceso claro ya marca bastante la diferencia.
+
 
 ### 1.8) ¿Qué duda, riesgo o punto crítico te queda abierto tras la unidad?
-La cadena de custodia me parece una forma fácil de invalidar una prueba de manera legal solo por cometer un error al manipular la evidencia y no seguir el protocolo y me queda en duda si un juez aceptaría una evidencia si no tenemos herramientas gorenses profesionales para certificarlas
+La cadena de custodia me parece una forma fácil de invalidar una prueba de manera legal solo por cometer un error al manipular la evidencia y no seguir el protocolo y me queda en duda si un juez aceptaría una evidencia si no tenemos herramientas forenses profesionales para certificarlas
 
 
 ## 2) Resumen esquematizado (obligatorio)
@@ -254,15 +272,34 @@ Recopilar → Investigar → Contener → Erradicar → Recuperar
 Enlaza aquí evidencias (capturas, logs, configuraciones, salidas de comandos, etc.) si forman parte de tu trabajo.
 
 ### Evidencia 1
-- Archivo: `evidencias/01_...`
-- Qué demuestra:
-- Qué he aprendido:
+- Archivo: ![Evidencia 1](evidencias/siem.png)
+- Qué demuestra: Esta evidencia muestra la infraestructura del laboratorio SIEM desplegada en contenedores, con servicios como Elastic, Kibana, Logstash, Filebeat, Snort, Nginx y una máquina víctima. Demuestra que el entorno está preparado para centralizar logs, monitorizar actividad y simular un escenario real de detección e investigación.
+
+- Qué he aprendido: He aprendido cómo se organiza un entorno de monitorización de seguridad y cómo se relacionan entre sí las distintas piezas de un SIEM. También he entendido la importancia de integrar varias herramientas para poder recoger, correlacionar y analizar eventos de forma eficaz.
+
 
 ### Evidencia 2
-- Archivo: `evidencias/02_...`
-- Qué demuestra:
-- Qué he aprendido:
+- Archivo: ![Evidencia 2](evidencias/investigacion.png)
+- Qué demuestra: Esta evidencia refleja el proceso de investigación de un incidente, con una cronología de eventos y una línea temporal de lo que fue ocurriendo. Demuestra la capacidad de ordenar la información, identificar las fases del ataque y relacionar cada acción con su evidencia correspondiente.
+
+- Qué he aprendido: He aprendido a reconstruir un incidente paso a paso a partir de los datos disponibles. También he visto cómo una buena correlación temporal ayuda a entender mejor el comportamiento del atacante y a explicar el impacto del ataque de manera clara.
+
+
+### Evidencia 3
+- Archivo: ![Evidencia 3](evidencias/investigacion-logs.png)
+- Qué demuestra: Esta evidencia muestra el análisis de logs y la revisión de registros para encontrar indicios de actividad sospechosa. Demuestra el uso de fuentes como access.log, auth.log o vsftpd.log para detectar accesos, intentos de intrusión y posibles movimientos del atacante.
+
+- Qué he aprendido: He aprendido la utilidad que tienen los logs como fuente principal de evidencias en una investigación forense. También he comprendido que revisar registros de distintos servicios permite detectar patrones de ataque que, por separado, podrían pasar desapercibidos.
+
+
+### Evidencia 4
+- Archivo: ![Evidencia 4](evidencias/investigacion-2.png)
+- Qué demuestra: Esta evidencia muestra la parte final del análisis, donde se interpretan las técnicas utilizadas durante el incidente y se relacionan con marcos de intrusión. Demuestra que no solo se observa lo ocurrido, sino que también se clasifica y se contextualiza dentro de una metodología de análisis.
+
+- Qué he aprendido: He aprendido a identificar técnicas de ataque y a vincularlas con etapas concretas de un incidente real. Además, he entendido mejor cómo documentar un caso de forma profesional, clara y ordenada para que otras personas puedan seguir el razonamiento de la investigación.
 
 
 ## 4) Conclusión (cierre)
-- 
+Esta unidad me ha ayudado a entender que una gestión de incidentes no consiste solo en detectar un ataque, sino en seguir un proceso ordenado para recoger evidencias, analizarlas y responder sin comprometer la investigación. También he reforzado la importancia de la cadena de custodia y de documentar bien cada paso para que el análisis sea útil tanto técnica como legalmente.
+
+
