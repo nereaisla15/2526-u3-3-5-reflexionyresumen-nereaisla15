@@ -300,6 +300,7 @@ Enlaza aquí evidencias (capturas, logs, configuraciones, salidas de comandos, e
 
 
 ## 4) Conclusión (cierre)
+
 Esta unidad me ha ayudado a entender que una gestión de incidentes no consiste solo en detectar un ataque, sino en seguir un proceso ordenado para recoger evidencias, analizarlas y responder sin comprometer la investigación. También he reforzado la importancia de la cadena de custodia y de documentar bien cada paso para que el análisis sea útil tanto técnica como legalmente.
 
 
